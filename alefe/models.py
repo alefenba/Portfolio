@@ -59,7 +59,7 @@ class Habilidades(models.Model):
 # PORTFOLIO SECTION
 
 class Projeto(models.Model):
-    nome_projeto = models.CharField(max_length=50,blank=False, default='')
+    nome_projeto = models.CharField(max_length=50,default='')
     imagem = models.ImageField(upload_to='projetos/')
     link = models.URLField(max_length=200)
 

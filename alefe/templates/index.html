@@ -105,8 +105,8 @@
 
                 
                 <div class="portfolio__container bd-grid">
-                <h1>{{projeto.nome_projeto}}</h1>
                     {% for projeto in projetos %}
+                    <h1>{{projeto.nome_projeto}}</h1>
                     
                     <div class="portfolio__img">
                         <img src="{{ projeto.imagem.url }}" alt="">
