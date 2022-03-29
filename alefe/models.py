@@ -5,7 +5,7 @@ from django.db import models
 class Inicio(models.Model):
     nome = models.CharField(max_length=50)
     saudacao = models.CharField(max_length=20)
-    foto = models.ImageField(upload_to='foto/')
+    foto = models.ImageField(upload_to='Perfil/')
     # save time when modified
     updated = models.DateTimeField(auto_now=True)
 
@@ -19,7 +19,7 @@ class Sobre(models.Model):
     cabecalho = models.CharField(max_length=50)
     carreira = models.CharField(max_length=50)
     descricao = models.TextField(blank=False)
-    perfil_img = models.ImageField(upload_to='perfil/')
+    perfil_img = models.ImageField(upload_to='Perfil/')
     
     updated = models.DateTimeField(auto_now=True)
 
@@ -64,6 +64,6 @@ class Projeto(models.Model):
     link = models.URLField(max_length=200)
 
     def __str__(self):
-        return f'Portfolio {self.id}'
+        return f'{self.id}'
 
 
