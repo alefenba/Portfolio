@@ -343,8 +343,9 @@ img{
 .certificado__img:hover .certificado__link{
     bottom: 0;
 }
+
 .certificado__link-name{
-    color: var(--dark-color);
+    color: var(--dark-color); 
 }
 
 /* ===== CONTACT =====*/

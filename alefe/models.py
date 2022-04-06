@@ -67,3 +67,11 @@ class Projeto(models.Model):
         return f'{self.id}'
 
 
+class Certificado(models.Model):
+    nome_curso = models.CharField(max_length=50,default='')
+    imagem_certificado = models.ImageField(upload_to='Certificados/') 
+    link_certificado = models.URLField(max_length=200)
+
+
+
+

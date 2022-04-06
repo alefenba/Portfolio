@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Categoria, Habilidades, Inicio, Perfil, Projeto, Sobre
+from .models import Categoria, Habilidades, Inicio, Perfil, Projeto, Sobre, Certificado
 
 
 # Inicio
@@ -31,3 +31,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Projeto
 admin.site.register(Projeto)
+
+
+# Projeto
+admin.site.register(Certificado)

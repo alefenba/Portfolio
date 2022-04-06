@@ -340,7 +340,7 @@ img{
     backdrop-filter: blur(10px);
     transition: .3s;
 }
-.certificado__img:hover .certificado__link{
+.certificado__img:hover .portfolio__link{
     bottom: 0;
 }
 .certificado__link-name{
