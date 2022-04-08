@@ -26,7 +26,7 @@ ipython = "*"
 django-extensions = "*"
 heroku3 = "*"
 boto3 = "*"
-
+django-heroku = "*"
 
 [requires]
 python_version = "3.9"
