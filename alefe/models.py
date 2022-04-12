@@ -62,6 +62,7 @@ class Projeto(models.Model):
     nome_projeto = models.CharField(max_length=50,default='')
     imagem = models.ImageField(upload_to='projetos/')
     link = models.URLField(max_length=200)
+    github_link = models.URLField(max_length=200, default='')
 
     def __str__(self):
         return f'{self.id}'
