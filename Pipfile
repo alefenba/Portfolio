@@ -26,6 +26,7 @@ django-extensions = "*"
 heroku3 = "*"
 boto3 = "*"
 pillow = "*"
+sentry-sdk = "*"
 
 [requires]
 python_version = "3.9"
