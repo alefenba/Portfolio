@@ -19,7 +19,6 @@ class Sobre(models.Model):
     cabecalho = models.CharField(max_length=50)
     carreira = models.CharField(max_length=50)
     descricao = models.TextField(blank=False)
-    perfil_img = models.ImageField(upload_to='Perfil/')
     
     updated = models.DateTimeField(auto_now=True)
 
