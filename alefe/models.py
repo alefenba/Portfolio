@@ -1,11 +1,12 @@
 from django.db import models
 
+
 # HOME SECTION
 
 class Inicio(models.Model):
     nome = models.CharField(max_length=50)
     saudacao = models.CharField(max_length=20)
-    foto = models.ImageField(upload_to='Perfil/')
+    foto = models.ImageField(upload_to='s3.amazonaws.com/alefeportfolio/media/Perfil')
     # save time when modified
     updated = models.DateTimeField(auto_now=True)
 
@@ -31,7 +32,7 @@ class Perfil(models.Model):
                                 on_delete=models.CASCADE)
     rede_social = models.CharField(max_length=20)
     link = models.URLField(max_length=200)
-
+    
 
 
 # SKILLS SECTION
@@ -59,7 +60,7 @@ class Habilidades(models.Model):
 
 class Projeto(models.Model):
     nome_projeto = models.CharField(max_length=50,default='')
-    imagem = models.ImageField(upload_to='projetos/')
+    imagem = models.ImageField(upload_to='s3.amazonaws.com/alefeportfolio/media/projetos/')
     link = models.URLField(max_length=200)
     github_link = models.URLField(max_length=200, default='')
 
@@ -69,7 +70,7 @@ class Projeto(models.Model):
 
 class Certificado(models.Model):
     nome_curso = models.CharField(max_length=50,default='')
-    imagem_certificado = models.ImageField(upload_to='Certificados/') 
+    imagem_certificado = models.ImageField(upload_to='s3.amazonaws.com/alefeportfolio/media/Certificados/') 
     link_certificado = models.URLField(max_length=200)
 
 
